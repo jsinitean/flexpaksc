@@ -24,7 +24,7 @@ theme = "hugo-serif-theme"
 
 [[menu.main]]
     name = "About Us"
-    url = "/about/"
+    url = "/team/"
     weight = 2
 
 #[[menu.main]]

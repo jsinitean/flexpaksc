@@ -2,7 +2,7 @@
 title: 'John Sinitean'
 date: 2018-11-19T10:47:58+10:00
 draft: false
-image: 'about/john.jpeg'
+image: 'team/john.jpeg'
 jobtitle: 'President'
 email: 'john@flexpaksc.com'
 linkedinurl: 'https://www.linkedin.com/in/john-sinitean/'
