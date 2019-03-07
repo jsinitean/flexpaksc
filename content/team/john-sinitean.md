@@ -7,6 +7,7 @@ jobtitle: 'President'
 email: 'john@flexpaksc.com'
 linkedinurl: 'https://www.linkedin.com/in/john-sinitean/'
 weight: 1
+
 ---
 
 Experienced packaging sales consultant who has spent the last 45 years in all facets of the packing industry.
