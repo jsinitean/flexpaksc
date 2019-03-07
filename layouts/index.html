@@ -44,10 +44,10 @@
 <div class="container pt-8 pt-md-12 pb-md-12">
   <div class="row justify-content-start">
     <div class="col-12">
-      <h2 class="mb-3">Services</h2>
+      <h2 class="mb-3">Consultative Services</h2>
     </div>
     {{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
-    {{ range first 4 (sort $services ".Params.weight") }}
+    {{ range first 2 (sort $services ".Params.weight") }}
     <div class="col-12 col-md-6 mb-1">
       {{ .Render "summary" }}
     </div>
@@ -60,7 +60,7 @@
 <div class="container pt-5 pb-5 pt-md-8 pb-md-8">
   <div class="row justify-content-center">
     <div class="col-12">
-      <h2 class="text-center text-dark mb-3">Features</h2>
+      <h2 class="text-center text-dark mb-3">Industry Expertise</h2>
     </div>
     {{ range .Site.Data.features }}
     <div class="col-12 col-md-6 col-lg-4 mb-2">
