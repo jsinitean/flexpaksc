@@ -1,4 +1,4 @@
-baseURL = "www.example.com"
+baseURL = "https://flexpaksc.netlify.com/"
 languageCode = "en-us"
 title = "FlexPak SC"
 theme = "hugo-serif-theme"
