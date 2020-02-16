@@ -17,13 +17,21 @@
 
 {{ define "main" }}
 
-<div class="intro pb-4">
+<div class="intro pb-0">
   <div class="container">
     {{ .Content }}
   </div>
 </div>
 
-<div class="container pt-2">
+<div class="container pb-0">
+  <div class="row">
+    {{ range.Pages.ByWeight }}
+    <div class="col-12 col-md-6 mb-2 ">{{ .Render "summary" }}</div>
+    {{ end }}
+  </div>
+</div>
+
+<div class="container pt-0">
   <div class="call">
     <div class="call-box-top">
       <div class="call-phone"><strong>Phone: </strong> <a href="tel:6302480618"> {{ .Site.Data.contact.phone }}</a> </div>
@@ -33,28 +41,15 @@
         </a>
       </div>
     </div>
-    <div class="call-box-bottom">
-      <a href="{{ .Site.BaseURL }}contact" class="button">Contact</a>
-    </div>
   </div>
 </div>
 
-{{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
-{{if gt (len $services) 0}}
-<div class="container pt-8 pt-md-12 pb-md-12">
-  <div class="row justify-content-start">
-    <div class="col-12">
-      <h2 class="mb-3">Consultative Services</h2>
-    </div>
-    {{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
-    {{ range first 2 (sort $services ".Params.weight") }}
-    <div class="col-12 col-md-6 mb-1">
-      {{ .Render "summary" }}
-    </div>
-    {{ end }}
+<div class="intro pb-2">
+  <div class="container">
+    {{ .Content }}
   </div>
 </div>
-{{end}}
+
 
 <div class="strip strip-grey">
 <div class="container pt-5 pb-5 pt-md-8 pb-md-8">
